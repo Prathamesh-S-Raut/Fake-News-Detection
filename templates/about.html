@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About Project</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-200">
+    <header class="text-gray-600 body-font -my-8">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center" style="position: relative; top: 15px; right: 50px;">
+            <a href="/" class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor"
+                    stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    class="w-10 h-10 text-white p-2 bg-green-500 rounded-full" viewBox="0 0 24 24">
+                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                </svg>
+                <span class="ml-3 text-xl">Fake News Detection</span>
+            </a>
+            <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center" style="position: relative; bottom: 13px; left:100px;">
+                <a href="/" class="mr-5 hover:text-gray-900">Home</a>
+                <a href="/predict" class="mr-5 hover:text-gray-900">Prediction</a>
+                <a href="/about" class="mr-5 hover:text-gray-900">About</a>
+            </nav>
+        </div>
+    </header>
+    <hr>
+
+    <section class="text-gray-600 body-font">
+        <div class="container px-5 py-12 mx-auto">
+            <div class="flex flex-col text-center w-full mb-10">
+                <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">
+                    Breaking the Chain of Misinformation with AI
+                </h1>
+                <p class="lg:w-2/3 mx-auto leading-relaxed text-base text-justify">
+                    In today's digital world, misinformation spreads faster than ever. Our Fake News Detection System is an AI-powered solution designed to identify false or misleading content with speed and accuracy.
+                </p>
+            </div>
+
+            <div class="lg:w-2/3 mx-auto leading-relaxed text-base text-justify space-y-6">
+                <div>
+                    <h2 class="text-xl font-semibold mb-2">🔍 Purpose</h2>
+                    <p>
+                        This project aims to support media consumers, journalists, and fact-checkers by providing a tool that evaluates the credibility of news headlines using advanced machine learning.
+                    </p>
+                </div>
+
+                <div>
+                    <h2 class="text-xl font-semibold mb-2">🧠 Technology Stack</h2>
+                    <ul class="list-disc list-inside">
+                        <li><strong>Model:</strong> BERT (Bidirectional Encoder Representations from Transformers)</li>
+                        <li><strong>Libraries:</strong> TensorFlow, Hugging Face Transformers, NLTK</li>
+                        <li><strong>Frontend:</strong> Flask with HTML, Tailwind CSS, Bootstrap</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h2 class="text-xl font-semibold mb-2">⚙️ How It Works</h2>
+                    <p>
+                        The system processes user-submitted news titles, cleans the text, tokenizes it using a BERT tokenizer, and classifies it using a fine-tuned BERT model. The output includes a confidence score showing the likelihood that the news is real or fake.
+                    </p>
+                </div>
+
+                <div>
+                    <h2 class="text-xl font-semibold mb-2">🌐 Impact</h2>
+                    <p>
+                        By providing real-time credibility assessments, the Fake News Detection System empowers users to think critically and make informed decisions, promoting a healthier information ecosystem.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
